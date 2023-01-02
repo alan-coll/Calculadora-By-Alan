@@ -21,7 +21,7 @@ for /F "usebackq tokens=1,2 delims==" %%i in (`wmic os get LocalDateTime /VALUE 
 set dateNow=%ldt:~0,4%.%ldt:~4,2%.%ldt:~6,2%
 set timeNow=%ldt:~8,2%:%ldt:~10,2%:%ldt:~12,2%
 
-set appName=BackupManager
+set appName=DprCalculadora
 
 git config --global --replace-all credential.helper wincred
 git config --global --replace-all credential.useHttpPath true
